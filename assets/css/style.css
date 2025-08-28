@@ -1,0 +1,133 @@
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Layout */
+.content-wrapper {
+    flex: 1;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(126, 96, 191);
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: auto; 
+}
+
+/* Mobile Responsif */
+@media (max-width: 991.98px) {
+    footer {
+        padding: 0.75rem 0;
+    }
+}
+
+.g-0 {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+/* Warna ungu custom */
+.bg-purple {
+    background-color: rgb(126, 96, 191) !important; 
+}
+
+.btn-purple {
+    background-color: rgb(126, 96, 191) !important;
+    color: white !important;
+}
+
+.text-purple {
+    color: rgb(126, 96, 191) !important; 
+}
+
+/* Style Poto Propil */
+.profile-header {
+    color: black;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.info-label {
+    font-weight: 600;
+    color: rgb(126, 96, 191);
+}
+
+.card-profile {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-profile:hover {
+    transform: translateY(-5px);
+}
+
+/* Hapus Dropdown Active Link */
+.dropdown-item:active,
+.dropdown-item:focus {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+/* Animasi Dropdown */
+.dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.2s ease-out;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.show .dropdown-menu,
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-item {
+    transition: background-color 0.15s ease;
+}
+
+.navbar .dropdown-toggle::after {
+    transition: transform 0.15s linear;
+}
+
+.show .dropdown-toggle::after {
+    transform: rotate(-180deg);
+}
+
+/* Warna text di home */
+.wa {
+    color: #25D366;
+}
+
+.cmart {
+    color: rgb(126, 96, 191);
+}
